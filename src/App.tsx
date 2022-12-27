@@ -6,7 +6,7 @@ function App() {
         <div>
             This is APP component
             <Rating/>
-            <Accordeon/>
+            <Accordion/>
         </div>
     );
 }
@@ -23,7 +23,7 @@ function Rating() {
     )
 }
 
-function Accordeon() {
+function Accordion() {
     return (
         <div>
             <h3>MENU</h3>
