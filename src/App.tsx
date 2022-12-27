@@ -4,11 +4,16 @@ import './App.css';
 function App() {
     return (
         <div>
-            This is APP component
+            <AppTitle/>
             <Rating/>
             <Accordion/>
+            <Rating/>
         </div>
     );
+}
+
+function AppTitle() {
+    return <> THIS IS COMPONENT</>
 }
 
 function Rating() {
@@ -24,17 +29,29 @@ function Rating() {
     )
 }
 
-
 function Accordion() {
     return (
         <div>
-            <h3>MENU</h3>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
+            <AccordionTitle/>
+            <AccordionBody/>
         </div>
+    )
+}
+
+
+function AccordionTitle() {
+    return (
+        <h3>MENU</h3>
+    )
+}
+
+function AccordionBody() {
+    return (
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
     )
 }
 
