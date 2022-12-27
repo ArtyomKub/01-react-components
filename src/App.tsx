@@ -14,14 +14,16 @@ function App() {
 function Rating() {
     return (
         <div>
-            <div>Stars</div>
-            <div>Stars</div>
-            <div>Stars</div>
-            <div>Stars</div>
-            <div>Stars</div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </div>
     )
 }
+
 
 function Accordion() {
     return (
@@ -36,5 +38,10 @@ function Accordion() {
     )
 }
 
+function Star() {
+    return (
+        <div> Star </div>
+    )
+}
 
 export default App;
