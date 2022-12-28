@@ -10,8 +10,8 @@ function App(props: any) {
             <PageTitle title={'MY FRIENDS'}/>
             Article 1
             <Rating value={3}/>
-{/*            <Accordion titleValue={'MENU'}/>
-            <Accordion titlevalue={'USERS'}/>*/}
+            <Accordion titleValue={'MENU'} collapsed={true}/>
+            <Accordion titleValue={'USERS'} collapsed={false}/>
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>
