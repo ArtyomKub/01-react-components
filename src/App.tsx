@@ -3,16 +3,15 @@ import './App.css';
 import {Accordion} from "./components/Accordion";
 import {Rating} from "./components/Rating/Rating";
 
-function App() {
+function App(props: any) {
     return (
         <div>
             <PageTitle title={'THIS IS APP COMPONENT'}/>
             <PageTitle title={'MY FRIENDS'}/>
             Article 1
             <Rating value={3}/>
-            <Accordion title={'HELLO'}/>
-            <Accordion title={'GOOD BOY'}/>
-            Article 2
+{/*            <Accordion titleValue={'MENU'}/>
+            <Accordion titlevalue={'USERS'}/>*/}
             <Rating value={0}/>
             <Rating value={1}/>
             <Rating value={2}/>
@@ -23,7 +22,11 @@ function App() {
     );
 }
 
-function PageTitle(props: any) {
+type PageTitlePropsType = {
+    title: string
+}
+
+function PageTitle(props: PageTitlePropsType) {
     return <h1>{props.title}</h1>
 }
 
