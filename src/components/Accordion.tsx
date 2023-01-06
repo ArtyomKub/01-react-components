@@ -6,7 +6,7 @@ type AccordionPropsType = {
 }
 
 export function Accordion(props: AccordionPropsType) {
-    if (props.collapsed === true) {
+    if (props.collapsed) {
         return (
             <div>
                 <AccordionTitle title={props.titleValue}/>
