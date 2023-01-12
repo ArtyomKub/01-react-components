@@ -7,10 +7,10 @@ import {OnOff} from "./components/OnOff/OnOff";
 function App(props: any) {
     return (
         <div>
-            {/*<PageTitle title={'THIS IS APP COMPONENT'}/>*/}
-            {/*<PageTitle title={'MY FRIENDS'}/>*/}
-            {/*Article 1*/}
-            {/*<Rating value={3}/>*/}
+            <PageTitle title={'THIS IS APP COMPONENT'}/>
+            <PageTitle title={'MY FRIENDS'}/>
+            Article 1
+            <Rating value={3}/>
             <Accordion titleValue={'MENU'} collapsed={true}/>
             <Accordion titleValue={'USERS'} collapsed={false}/>
             <Rating value={0}/>
