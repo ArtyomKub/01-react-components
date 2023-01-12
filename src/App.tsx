@@ -7,7 +7,7 @@ import {OnOff} from "./components/OnOff/OnOff";
 function App(props: any) {
     return (
         <div>
-            <PageTitle title={'THIS IS APP COMPONENT'}/>
+            {/*<PageTitle title={'THIS IS APP COMPONENT'}/>
             <PageTitle title={'MY FRIENDS'}/>
             Article 1
             <Rating value={3}/>
@@ -18,8 +18,9 @@ function App(props: any) {
             <Rating value={2}/>
             <Rating value={3}/>
             <Rating value={4}/>
-            <Rating value={5}/>
+            <Rating value={5}/>*/}
             <OnOff/>
+
         </div>
     );
 }
