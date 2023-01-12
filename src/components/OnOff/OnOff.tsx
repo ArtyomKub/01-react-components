@@ -1,12 +1,8 @@
-import React from 'react';
-
-type PropsType = {
-    on: boolean
-}
+import React, {useState} from 'react';
 
 export const OnOff = () => {
 
-    const on = false
+    let [on, setOn] = useState(false); //hook
 
     const onStyle = {
         width: '30px',
@@ -16,7 +12,6 @@ export const OnOff = () => {
         padding: '10px',
         backgroundColor: on ? 'green' : 'white'
     };
-
     const offStyle = {
         width: '30px',
         height: '20px',
@@ -27,7 +22,6 @@ export const OnOff = () => {
         backgroundColor: on ? 'white' : 'red'
 
     };
-
     const indicatorStyle = {
         width: '10px',
         height: '10px',
@@ -40,8 +34,8 @@ export const OnOff = () => {
 
     return (
         <div>
-            <div style={onStyle}>ON</div>
-            <div style={offStyle}>OFF</div>
+            <div style={onStyle} onClick={() => {setOn(true)}}>ON</div>
+            <div style={offStyle} onClick={() => {setOn(false)}}>OFF</div>
             <div style={indicatorStyle}></div>
         </div>
     );
