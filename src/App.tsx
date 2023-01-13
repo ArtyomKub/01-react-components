@@ -7,23 +7,9 @@ import {UnControlledAccordion} from "./components/SelfControlledAccordion/UnCont
 
 function App(props: any) {
     return (
-        <div>
-            {/*<PageTitle title={'THIS IS APP COMPONENT'}/>
-            <PageTitle title={'MY FRIENDS'}/>
-            Article 1
-            <Rating value={3}/>
-            <UnControlledAccordion titleValue={'MENU'} collapsed={true}/>
-            <UnControlledAccordion titleValue={'USERS'} collapsed={false}/>
-            <Rating value={0}/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>
-            <Rating value={5}/>*/}
+        <div className='App'>
             <OnOff/>
             <UnControlledAccordion titleValue={'MENU'} />
-            <UnControlledAccordion titleValue={'USERS'}/>
-
         </div>
     );
 }
