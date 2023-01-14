@@ -11,9 +11,9 @@ export function UncontrolledRating() {
     return (
         <div>
             <Star selected={value > 0}/><button>1</button>
-            <Star selected={value > 1}/>
-            <Star selected={value > 2}/>
-            <Star selected={value > 3}/>
+            <Star selected={value > 1}/><button>1</button>
+            <Star selected={value > 2}/><button>1</button>
+            <Star selected={value > 3}/><button>1</button>
             <Star selected={value > 4}/>
         </div>
     )
