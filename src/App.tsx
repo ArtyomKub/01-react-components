@@ -10,11 +10,14 @@ function App() {
     return (
         <div className='App'>
             <OnOff/>
+
             <UnControlledAccordion titleValue={'MENU'}/>
-            <Accordion titleValue={'Menu'} collapsed={false}/>
 
             <UncontrolledRating/>
+
             <Rating value={3}/>
+
+            <Accordion titleValue={'Menu'} collapsed={false}/>
         </div>
     );
 }
