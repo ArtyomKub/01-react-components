@@ -15,9 +15,9 @@ function App() {
 
             <UncontrolledRating/>
 
-            <Rating value={3}/>
+            {/*<Rating value={3}/>*/}
 
-            <Accordion titleValue={'Menu'} collapsed={false}/>
+            {/*<Accordion titleValue={'Menu'} collapsed={false}/>*/}
         </div>
     );
 }
