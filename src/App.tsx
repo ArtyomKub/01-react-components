@@ -21,7 +21,7 @@ function App() {
             <Accordion titleValue={'Menu'}
                        onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}
                        collapsed={accordionCollapsed}/>
-            <OnOff on={switchOn} onChange={(on)=>{setSwitchOn(on)}}/>
+            <OnOff on={switchOn} onChange={setSwitchOn}/>
         </div>
     );
 }
