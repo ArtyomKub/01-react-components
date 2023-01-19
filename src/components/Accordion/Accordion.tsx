@@ -6,7 +6,6 @@ type AccordionPropsType = {
     onChange: () => void
 }
 
-
 export function Accordion(props: AccordionPropsType) {
     return (
         <div>
@@ -17,7 +16,6 @@ export function Accordion(props: AccordionPropsType) {
         </div>
     )
 }
-
 
 export function Accordion2(props: AccordionPropsType) {
     return (
